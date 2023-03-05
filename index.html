@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!--  *****************************   NAVBAR   ******************************  -->
+
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container">
+
+            <a class="navbar-brand" href="#"> <img id="logo" src="images/KMlogo.png" alt="logo" width="150"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link " aria-current="page" href="#home">O nás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Fotogaléria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--  *****************************   O NÁS   ******************************  -->
+    <section id="home">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1>Karpatská muzika</h1>
+                    <h5>~ Ľudová hudba ~ </h5>
+                    <div class="line"></div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat arcu eget condimentum
+                        euismod. Nulla justo odio, aliquam vel velit rhoncus, finibus dictum nunc. Duis sit amet sem in
+                        tortor tristique tincidunt ac eu felis. Phasellus imperdiet nisl ut ex elementum commodo.
+                        Aliquam vel nisl volutpat, volutpat nisi et, venenatis erat. Suspendisse ligula est, volutpat at
+                        nisl ut, sagittis tristique odio. Etiam a magna elit. Vestibulum sed dui turpis. Nulla at lorem
+                        sed neque cursus cursus. Sed quis lacus sit amet risus porttitor maximus. Phasellus vulputate,
+                        metus eget gravida tempus, risus lorem mattis justo, et laoreet mauris sem non sem. Cras
+                        tincidunt, ex eget tristique eleifend, est metus sodales velit, et dignissim est purus fringilla
+                        arcu.
+                        Integer varius ullamcorper lacinia. Class aptent taciti sociosqu ad litora torquent per conubia
+                        nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Suspendisse in ex sagittis lectus rutrum vehicula ut nec eros. Aenean
+                        blandit, mi eget gravida gravida, nisi enim varius odio, a dapibus enim lacus eget mi. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec interdum erat. Etiam sapien
+                        lorem, posuere ac neque eget, porta pulvinar diam. Nam porttitor nunc justo, blandit imperdiet
+                        odio efficitur maximus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  *****************************   GALLERY  ******************************  -->
+    <section class="gallery" id="galeria">
+        <div class="container-lg text-center">
+            <h1 id="fotogaleria">Fotogaléria</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-4">
+                <div class="col">
+                    <img src="images/img1.jpg" alt="gallery" class="gallery-item" width="400" height="250">
+                </div>
+                <div class="col">
+                    <img src="images/img2.jpg" alt="gallery" class="gallery-item" width="400" height="250">
+                </div>
+                <div class="col">
+                    <img src="images/img3.jpg" alt="gallery" class="gallery-item" width="400" height="250">
+                </div>
+                <div class="col">
+                    <img src="images/img4.jpg" alt="gallery" class="gallery-item" width="400" height="250">
+                </div>
+                <div class="col">
+                    <img src="images/img5.jpg" alt="gallery" class="gallery-item" width="400" height="250">
+                </div>
+                <div class="col">
+                    <img src="images/img6.jpg" alt="gallery" class="gallery-item" width="400" height="250">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/img1.jpg" class="modal-img" alt="modal img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  *****************************   KONTAKT   ******************************  -->
+    <section id="contact">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-sm-6">
+                    <h1>NAPÍŠTE NÁM</h1>
+<!--  *****************************   KONTAKT   ****************** ********  **********  -->
+                   <form action="https://formsubmit.co/j.krivosudska@gmail.com" method="POST">
+                        <div class="mb-3">
+                            <small>Meno</small>
+                            <input type="text" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <small>Email</small>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+
+                        <div class="mb-3">
+                           <small>Text</small>
+                           <textarea class="form-control" name="message" cols="30" rows="10" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-light">Submit</button>
+                    </form>
+               <!--  ********    
+                <form action="https://formsubmit.co/j.krivosudska@gmail.com" method="POST">
+                    <input type="text" name="name" class="form-control" required>
+                    <input type="email" name="email" class="form-control" required>
+                    <textarea class="form-control" name="message" cols="30" rows="10" required></textarea>
+                    <button type="submit">Send</button>
+               </form>
+
+               **********  -->     
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!--  *****************************   FOOTER  ******************************  -->
+ <section class="footer">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">© 2023 Karpatská muzika</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
