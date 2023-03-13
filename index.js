@@ -9,4 +9,12 @@ if(e.target.classList.contains("gallery-item")){
 }
 })
 
-const myModal = new bootstrap.Modal(document.getElementById('myModal'), options);
+
+
+let btn = document.querySelector("#ok");
+
+btn.addEventListener("click", () => {
+window.location.href = "http://127.0.0.1:5500/";
+
+});
+

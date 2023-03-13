@@ -50,16 +50,14 @@ body {
 }
 
 #home {
-    background-image: linear-gradient(rgba(84, 7, 7, 0.753), rgba(11, 2, 2, 0.803), rgba(27, 41, 88, 0.907)), url(../images/background2.jpg);
+    background-image: linear-gradient(rgba(84, 7, 7, 0.753), rgba(11, 2, 2, 0.803), rgba(27, 41, 88, 0.907)), url(../images/background.jpg);
     min-height: 90vh;
-    background-size: cover;
     display: flex;
     align-items: center;
+    background-size: cover;
     color: rgb(255, 255, 255);
     border-bottom: solid 0.3px rgb(0, 0, 0);
 }
-
-
 
 @media only screen and (max-width: 1300px) {
     #home h1 {
@@ -164,6 +162,14 @@ background-color: #ffffffc6;
     margin-top: 1em;
 }
 
+#ok {
+    background:  linear-gradient(rgba(135, 229, 193, 0.541),rgba(47, 176, 127, 0.756)) ;
+    color: #000000;
+    width: 82%;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
 .footer {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -187,7 +193,7 @@ background-color: #ffffffc6;
  }
 
 #thankyou {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.974), rgba(26, 6, 6, 0.908)), url(../images/background2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.911), rgba(26, 6, 6, 0.908)), url(../images/background.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
